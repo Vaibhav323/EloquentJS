@@ -9,7 +9,7 @@ Next, write a function called countChar that behaves like countBs, except it tak
 function countBs(string)
 {
     let count = 0;
-    for( let i = 0; i < (string.length-1); i++)
+    for( let i = 0; i < (string.length); i++)
         {
             if(string[i]=='B')
                 count++;
@@ -18,12 +18,12 @@ function countBs(string)
 }
 function countChar(string, character) {
   let count = 0;
-  for (let i = 0; i < string.length - 1; i++) {
+  for (let i = 0; i < string.length; i++) {
     if (string[i] == character) count++;
   }
   return count;
 }
 
 
-console.log(countBs("Bob the Builder."))
-console.log(countChar("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.","i"))
+console.log(countBs("BOB"));
+console.log(countChar("kakkerlak", "k"));

@@ -17,12 +17,16 @@ function isEven(num)
     if(num < 0)
         return isEven(-num);
     else if(num==0)
-        return "even";
+        return true;
     else if(num == 1)
-        return "odd";
+        return false;
     
     else
         return isEven(num-2);
 }
+
+console.log(isEven(50));
+
+console.log(isEven(75));
 
 console.log(isEven(-1));
